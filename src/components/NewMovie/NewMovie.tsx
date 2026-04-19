@@ -15,7 +15,7 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
   const [imdbId, setImdbId] = useState('');
 
   const isFormValid = [title, imgUrl, imdbUrl, imdbId].every(
-    v => v.trim() !== '',
+    value => value.trim() !== '',
   );
 
   const resetForm = () => {
